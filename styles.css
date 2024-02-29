@@ -1,0 +1,129 @@
+body {
+    margin:0;
+    background-color:rgb(19, 24, 27);
+
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* First Navigation Bar */
+
+.first-nav-bar {
+    /* border: solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(10, 10, 14, 0.813);
+    color: rgb(49, 49, 49);
+}
+
+.first-nav-bar-image img {
+    width: 2vw;
+}
+
+.first-nav-bar-segment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw;
+    gap: 0.4vw;
+    height: 3vh;
+    /* border: solid red; */
+}
+
+.first-nav-left {
+    gap: 1vw;
+}
+
+.type-to-search {
+    display: flex;
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 0.2vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+    max-height: 3.5vh; 
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    width: 17vw;  
+}
+
+.type-to-search input {
+    background-color: rgb(11, 11, 11);
+    color: rgb(49, 49, 49);;
+    border: none;
+    margin: 1vw;
+    margin-left: -1.4vw;
+    
+
+}
+
+.first-nav-bar-right-elem {
+    /* margin: 0.5vw; */
+    width:1.5vw;
+    height:1.5vw;
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 0.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    text-wrap: nowrap;
+}
+
+.first-nav-bar-right-elem:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.first-nav-bar-image img {
+    width: 1.6vw;
+    border-radius: 100%;
+}
+
+.vertical-line {
+    margin-right: -2.4vw;
+}
+
+.no-border {
+    border: none;
+}
+
+.create-new {
+    width:3vw;
+}
+
+.query-anchor a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.7vw;
+}
+
+/* Second Navigation Bar */
+
+.second-nav-bar {
+    border: solid blue;
+    background-color: rgba(0, 0, 0, 0.813);
+    color: rgb(49, 49, 49);;
+}
+
+/* Main Container */
+
+.main-container {
+    display: flex;
+    border: solid purple;
+}
+
+/* Footer */
+
+.footer {
+    border: solid red;
+    display: flex;
+}
+
+.footer img {
+    border: solid pink;
+    width: 1.5vw;
+}
+
+
