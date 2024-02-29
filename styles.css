@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(10, 10, 14, 0.813);76co76r:76;
+    background-color: rgba(1, 4, 11, 0.981);
 }
 
 .first-nav-bar-image img {
@@ -24,7 +24,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1vw;
+    margin: 0.9vw;
+    margin-bottom: 0.5vw;
     gap: 0.4vw;
     height: 3vh;
     /* border: solid red; */
@@ -36,7 +37,7 @@ body {
 
 .type-to-search {
     display: flex;
-    border: 1px solid rgb(91, 91, 91);
+    border: 1px solid rgb(74, 76, 88);
     border-radius: 0.2vw;
     justify-content: space-between;
     align-items: center;
@@ -45,15 +46,15 @@ body {
     padding-left: 0.4vw;
     padding-right: 0.4vw;
     width: 17vw;  
-    color: rgb(91,91,91);
+    color: rgb(74, 76, 88);
 }
 
 .type-to-search input {
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(1, 4, 11);
     border: none;
     margin: 1vw;
     margin-left: -1.4vw;
-    color: rgb(91,91,91);
+    color: rgb(74, 76, 88);
 
 }
 
@@ -61,18 +62,20 @@ body {
     /* margin: 0.5vw; */
     width:1.5vw;
     height:1.5vw;
-    border: 1px solid rgb(66, 66, 66);
+    border: 1px solid rgb(74, 76, 88);
     border-radius: 0.2vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2vw;
     text-wrap: nowrap;
-    color: rgb(91,91,91);
+    color: rgb(74, 76, 88);
 }
 
 .first-nav-bar-right-elem:hover {
-    background-color: rgb(30, 30, 30);
+    background-color: rgba(255, 255, 255, 0.146);
+    border: 1px solid rgb(119, 121, 134);
+    color: rgb(119, 121, 134);
 }
 
 .first-nav-bar-image img {
@@ -92,6 +95,12 @@ body {
     width:3vw;
 }
 
+.query-anchor {
+    padding: 0.3vw;
+    display: flex;
+    justify-content: center;
+}
+
 .query-anchor a{
     text-decoration: none;
     color: white;
@@ -99,11 +108,58 @@ body {
     font-size: 0.7vw;
 }
 
+.query-anchor:hover{
+    background-color: rgba(255, 255, 255, 0.146);
+    border: 1px solid rgb(119, 121, 134);
+    border-radius: 0.2vw;
+    border: none;
+}
+
+
 /* Second Navigation Bar */
 
 .second-nav-bar {
-    border: solid blue;
-    background-color: rgba(0, 0, 0, 0.813);
+    /* border: solid blue; */
+    background-color: rgba(1, 4, 11, 0.981);
+    display: flex;
+    justify-content:left;
+    height: 2vw;
+    font-size: 0.75vw;
+    font-weight: 400;
+    padding-left: 0.3vw;
+    padding-bottom: 0.3vw;
+    border-bottom: 0.5px solid rgb(74, 76, 88);
+}
+
+.second-nav-bar-elem {
+    /* border: 1px solid white; */
+    color: rgba(255, 255, 255, 0.836);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3vw;
+    margin-left: 1vw;
+    height: 3vh;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+}
+
+.second-nav-bar-elem:hover {
+    background-color: rgba(255, 255, 255, 0.146);
+    border: 1px solid rgb(119, 121, 134);
+    border-radius: 0.2vw;
+    border: none;
+}
+
+.repo-number p{
+    background-color: rgba(87, 87, 87, 0.635);
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main Container */
@@ -130,12 +186,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(91,91,91);
+    color: rgb(74, 76, 88);
 }
 
 .footer-element a{
     text-decoration: none;
-    color: rgb(91,91,91);
+    color: rgb(74, 76, 88);
 }
 
 .footer img {
