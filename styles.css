@@ -13,8 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(10, 10, 14, 0.813);
-    color: rgb(49, 49, 49);
+    background-color: rgba(10, 10, 14, 0.813);76co76r:76;
 }
 
 .first-nav-bar-image img {
@@ -46,15 +45,15 @@ body {
     padding-left: 0.4vw;
     padding-right: 0.4vw;
     width: 17vw;  
+    color: rgb(91,91,91);
 }
 
 .type-to-search input {
-    background-color: rgb(11, 11, 11);
-    color: rgb(49, 49, 49);;
+    background-color: rgb(16, 16, 16);
     border: none;
     margin: 1vw;
     margin-left: -1.4vw;
-    
+    color: rgb(91,91,91);
 
 }
 
@@ -69,6 +68,7 @@ body {
     align-items: center;
     font-size: 1.2vw;
     text-wrap: nowrap;
+    color: rgb(91,91,91);
 }
 
 .first-nav-bar-right-elem:hover {
@@ -104,26 +104,44 @@ body {
 .second-nav-bar {
     border: solid blue;
     background-color: rgba(0, 0, 0, 0.813);
-    color: rgb(49, 49, 49);;
 }
 
 /* Main Container */
 
 .main-container {
     display: flex;
-    border: solid purple;
+    /* border: solid purple; */
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer */
 
 .footer {
-    border: solid red;
+    /* border: solid red; */
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    font-size: 0.7vw;
+}
+
+.footer-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(91,91,91);
+}
+
+.footer-element a{
+    text-decoration: none;
+    color: rgb(91,91,91);
 }
 
 .footer img {
-    border: solid pink;
+    /* border: solid pink; */
     width: 1.5vw;
+    margin-right: 0.5vw;
 }
 
 
