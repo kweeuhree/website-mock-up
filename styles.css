@@ -151,6 +151,7 @@ body {
     border: 1px solid rgb(119, 121, 134);
     border-radius: 0.2vw;
     border: none;
+    cursor: pointer;
 }
 
 .repo-number p{
@@ -174,7 +175,8 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 1.5vw;
+    margin: 1.8vw;
+    padding: 0.4vw;
     /* border: solid green; */
 
 }
@@ -193,12 +195,130 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    color: rgb(230,237,243)
 }
 
-.profile-avatar img {
-    border-radius: 100%;
-    width: 16vw;
+.profile-avatar {
+    display: flex;
+    position: relative;
 }
+
+.avatar img {
+    border-radius: 100%;
+    width: 15.2vw;
+}
+
+.edit-status {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    height: 1.8vw;
+    width: 1.8vw;
+    background-color: rgb(19, 24, 27);;
+    border: 1px solid rgb(119, 121, 134);
+    border-radius: 50%;
+}
+
+.edit-status:hover {
+    box-shadow: -2px 0 10px 2px rgba(0, 0, 0, 0.763);
+}
+
+.smiley {
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(119, 121, 134);  
+}
+
+/* Name and Nickname */
+
+.name-nickname {
+    /* border: 1px solid aliceblue; */
+    margin-top: 0.5vw;
+}
+
+.name {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.nickname {
+    color:rgb(119, 121, 134);
+    font-size: 1.1vw;
+    font-weight: 100;
+}
+
+/* Edit Profile Button */
+
+.edit-profile-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33,38,45);
+    border: 1px solid rgb(74, 76, 88);
+    border-radius: 0.2vw;
+    color: rgba(203, 203, 203, 0.66);
+    padding: 0.3vw;
+}
+
+.edit-profile-div:hover{
+    background-color: rgba(255, 255, 255, 0.146);
+    border: 1px solid rgb(119, 121, 134);
+    color: rgb(119, 121, 134);
+    cursor: pointer;
+}
+
+.edit-profile-button {
+    border: none;
+    background-color: transparent;
+    color: rgb(192, 194, 206);
+    font-size: 0.7vw;
+    font-weight: 600;
+}
+
+/* Profile elements */
+
+.profile-element, .profile-element a, .profile-element b {
+    color:rgb(230,237,243);
+    font-size: 0.7vw;
+    text-decoration: none;
+}
+
+.profile-element {
+    /* border: solid blue; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-following:not(b) {
+    color:rgb(119, 121, 134);
+}
+
+.profile-following:hover, .profile-element a:hover, .smiley:hover {
+    color: rgb(83, 137, 255);
+    cursor: pointer;
+}
+
+.in-profile-icon {
+    color:rgb(119, 121, 134);
+    font-size: 0.7vw;
+    margin: 0.2vw;
+}
+
+.rocket-icon {
+    transform: rotate(45deg);
+    font-size: 1.2vw;
+}
+
+.profile-last-two-elems {
+    margin-top: 0.8vw;
+    line-height: 50%;
+    font-size:0.8vw;
+}
+
 
 /* Repositories container */
 
@@ -206,7 +326,7 @@ main {
     /* border: solid lightgoldenrodyellow; */
     display: flex;
     flex-direction: column;
-    width: 48vw;
+    width: 46vw;
     height: 100vh;
     margin-left: 1vw;
 }
@@ -215,8 +335,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0.7vw;
-    margin-right: 0.7vw;
+    margin-left: 0.6vw;
+    margin-right: 0.6vw;
 }
 
 .repo-customize-pins {
@@ -224,8 +344,9 @@ main {
     font-size: 0.65vw;
 }
 
-.repo-customize-pins:hover {
+.repo-customize-pins:hover, .repo-title:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Repositories Blocks */
@@ -241,17 +362,22 @@ main {
     border: 1px solid rgb(74, 76, 88);
     border-radius: 0.5vw;
     padding: 0.8vw;
-    margin: 0.5vw;
+    margin: 0.4vw;
+    color: rgb(134, 136, 148);
     display: flex;
     flex-direction: column;
     width: 44%;
-    gap:1.2vw;
+    height: 28%;
+    gap:0.8vw;
+    font-size: 0.6vw;
+    position: relative;
 }
 
 .repo-float-top {
     display: flex;
     align-items: center;
     justify-content:space-between;
+    /* margin-top: 0.3vw;    */
 }
 
 .repo-title {
@@ -263,8 +389,6 @@ main {
 .repo-public {
     border: 1px solid rgb(74, 76, 88);
     border-radius: 1vw;
-    color: rgb(134, 136, 148);
-    font-size: 0.6vw;
     font-weight:600;
     padding-right: 0.3vw;
     padding-left: 0.3vw;
@@ -272,6 +396,17 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.repo-middle {
+    margin-bottom: 1vw;
+}
+
+.repo-float-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.8vw;
+}
+
 
 /* Footer */
 
